@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   constructor() { }
-  headerTitle:string = "";
+  headerTitle:string = "#LET'S CONNECT";
   headerDescription:string="";
   backgroundImg:string="";
 

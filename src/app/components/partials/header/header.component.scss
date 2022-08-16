@@ -1,8 +1,11 @@
 .header{
   height: 400px;
   background: rgb(36, 34, 34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 h1{
   color: white;
-  font-size: 36px;
+  font-size: 60px;
 }
