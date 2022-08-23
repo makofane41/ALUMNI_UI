@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './components/partials/search/search.component';
 import { HeaderComponent } from './components/partials/header/header.component';
 import { FindalumniComponent } from './components/pages/findalumni/findalumni.component';
+import { CareerComponent } from './components/pages/career/career.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FindalumniComponent } from './components/pages/findalumni/findalumni.co
     SearchComponent,
     HeaderComponent,
     FindalumniComponent,
+    CareerComponent,
   ],
   imports: [
     BrowserModule,

@@ -28,16 +28,18 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 40px 80px 40px;
+  max-height: 670px;
 }
 .alunmiPreview ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 50px;
-
+   overflow-y: scroll;
 }
 .alunmiPreview ul li{
   justify-content: center;
+
 }
 
 .alumni{
@@ -86,6 +88,12 @@ img{
 .opportunities{
 align-items: flex-start;
 padding-bottom: 60px;
+position: relative;
+min-height: 800px;
+
+}
+.opportunities ul{
+  overflow-y: scroll;
 }
 
 .oppotunity{
@@ -94,7 +102,6 @@ padding-bottom: 60px;
   align-items: center;
   background: white;
   margin-bottom: 50px;
-  height: 400px;
 
 }
 .oppotunity img{

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { AlumniService } from 'src/app/services/alumni.service';
+import { Alumni } from 'src/app/shared/models/Alumni';
 
 @Component({
   selector: 'app-findalumni',
@@ -7,7 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FindalumniComponent implements OnInit {
 
-  constructor() { }
+  alumnus:Alumni[] = [];
+  constructor(private alumniService:AlumniService,activatedRoute:ActivatedRoute) {
+   activatedRoute.params.subscribe((params)=>{
+    if(params.searchTerm)
+    this.alumnus = this.alumniService.getAlumniBySearchTerm(params.searchTerm);
+    else
+    this.alumnus= alumniService.getAllAlumni();
+  })
+
+   }
 
   ngOnInit(): void {
   }

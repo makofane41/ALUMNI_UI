@@ -1,20 +1,8 @@
 <div class="search">
-  <input list="alumni-list" id="alumnus" placeholder="All" autocomplete="o">
+  <input #s type="text" list="alumni-list" id="alumnus" placeholder="All" autocomplete="" (keyup.enter)="search(s.value)" [value]="searchTerm">
   <!-- Can the placeolder be Search for alumni -->
   <datalist id="alumni-list">
-    <option value="john doe | software development| 2018-2021"></option>
-    <option value="nehamia peters | software development| 2018-2021"></option>
-    <option value="zoe amaia smith | software development| 2018-2021"></option>
-    <option value="pengia tode | software engineering| 2018-2021"></option>
-    <option value="lethabo peterson | human resourses| 2018-2021"></option>
-    <option value="samson jackson | multimedia| 2018-2021"></option>
-    <option value="katie matthews | electrical engineering| 2018-2021"></option>
-    <option value="joseph akif daniels | software development| 2018-2021"></option>
-    <option value="mark scorfield | software development| 2018-2021"></option>
-    <option value="zoe amaia smith | software development| 2018-2021"></option>
-    <option value="pengia tode | software engineering| 2018-2021"></option>
-    <option value="lethabo peterson | human resourses| 2018-2021"></option>
-    <option value="samson jackson | multimedia| 2018-2021"></option>
+    <option  *ngFor="let a of alumni" [value]="a.alumni_fname +' '+ a.alumni_lname +' | ' + a.alumni_faculty"></option>
   </datalist>
-  <button>Filter</button>
+  <button (click)="search(s.value)">Filter</button>
 </div>

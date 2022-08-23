@@ -24,6 +24,9 @@ button{
   font-size: 18px;
   border: 1px solid blue;
 }
+button:hover{
+  cursor: pointer;
+}
 datalist{
   height: 20px;
   overflow: scroll;
