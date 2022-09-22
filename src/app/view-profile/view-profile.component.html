@@ -1,0 +1,93 @@
+
+
+<div class="container">
+    <div class="wrapper">
+    
+    <div [innerHtml]='msg' *ngIf="msg" style="color: red;"></div>
+    <img [src]="url ? url: 'assets/image/1027249.jpg'" class="">
+    
+   
+   
+  
+   <input type="file"  (change)="selectFile($event)">
+    
+        </div>
+         
+    
+   <div class=" p1" >
+    <div>
+        <p class="num">80K</p>
+        <p>Followers</p>
+      </div>
+       <div>
+            <p class="num">1.4K</p>
+            <p>Followers</p>
+          </div>
+</div>
+<br>
+
+<ul class="list-group">
+    <li 
+        *ngFor="let user of userprofile"
+        class="list-group-item">
+        {{user.alumni_name}}
+    </li>
+  </ul>
+<form class="bannerContainer" >
+    <div class="col-center-4 "  >
+ 
+        
+       
+            <div class="form-control" >
+               
+                <label class="header">First name:</label>
+                <input class="form-control" type="text" placeholder=""aria-label="Disabled input example" disabled>
+              
+ 
+        </div>
+       
+        <div class="form-control">
+            <label class="header">Last Name: </label>
+            <input class="form-control" type="text" placeholder="olayinka" aria-label="Disabled input example" disabled>
+        
+        </div>
+        <div class="form-control">
+            <label class="header">Email: </label>
+            <input class="form-control" type="text" placeholder="OLA@GMAIL.COM" aria-label="Disabled input example" disabled>
+        
+        </div>
+        <div class="form-control">
+            <label class="header">Contact Number: </label>
+            <input class="form-control" type="text" placeholder="123456789" aria-label="Disabled input example" disabled>
+          
+        
+        </div>
+        <div class="form-control">
+            <label class="header">Gender:</label>
+            <input class="form-control" type="text" placeholder="MALE" aria-label="Disabled input example" disabled>
+          
+        
+        </div>
+        <div class="form-control">
+            <label class="header">Faculty:  </label>
+            <input class="form-control" type="text" placeholder="ICT" aria-label="Disabled input example" disabled>
+       
+        
+        </div>
+    
+        </div>
+    
+        <br>
+        <br>
+        <div class="text-center">
+            <a routerLink="#"><button type="button" class="btn btn-outline-primary">UPDATE </button>   <i>   </i></a>
+        
+    </div>
+     
+    </form>
+    
+</div>  
+
+        
+   
+ 
