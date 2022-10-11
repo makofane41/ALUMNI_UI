@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="image">
+    <img src="../../../../../assets/adminlogin.png" alt="sideimg">
+  </div>
+  <div class="details">
+    <div class="header">
+      <img src="../../../../../assets/logo.png" alt="logo">
+      <h2>ADMIN SIGN IN</h2>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+      <div class="input-container">
+        <label >Email</label>
+        <div>
+          <input type="email" placeholder="email" formControlName="email">
+        </div>
+      </div>
+      <div class="error-list" *ngIf="fc.email.errors && isSubmitted">
+        <div *ngIf="fc.email.errors.required">Should not be empty</div>
+        <div *ngIf="fc.email.errors.email">Incorrect email</div>
+      </div>
+      <div class="input-container">
+        <label >Password</label>
+        <div>
+          <input type="email" placeholder="password" formControlName="password">
+        </div>
+        <div class="error-list" *ngIf="fc.password.errors && isSubmitted">
+          <div *ngIf="fc.password.errors.required">Should not be empty</div>
+        </div>
+      </div>
+      <div class="forgot">
+        <p>Forgot Password?<a routerLink="/forgotPassword"> Reset</a></p>
+      </div>
+      <div class="button">
+        <button type="submit">Sign in</button>
+      </div>
+    </form>
+  </div>
+</div>

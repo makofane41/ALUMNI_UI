@@ -16,10 +16,18 @@
   margin: 0;
   color: white;
 }
+.header-description p{
+  margin-top:100px;
+  color: black;
+  z-index: 1;
+  background-color: white;
+
+}
 .header >h1{
-  color: white;
+  color: black;
   font-size: 60px;
   z-index: 1;
+  background-color: white;
 }
 
 /*********************/
@@ -42,6 +50,8 @@
 }
 .heading{
   margin-top: 40px ;
+  flex-direction: column;
+  padding-left: 20px;
   display: flex;
   justify-content: center;
 }
@@ -53,6 +63,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.banner a {
+  color: white;
+}
+.banner span{
+  // color: rgb(5, 31, 54);
+}
+.banner span:hover {
+  // font-size: 25.02px;
+  text-decoration: underline;
 }
 .sections{
   display: flex;
@@ -69,6 +89,7 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
 .left-section a > h3{
   padding-left: 40px;
   margin-top: 70px;
@@ -81,8 +102,10 @@
   align-items: flex-start;
   padding-left: 30px;
   flex-direction: column;
+  height: 600px;
   overflow-y: scroll;
 }
+
 .post-data{
   width: 80%;
   height: 600px;
@@ -91,6 +114,7 @@
   padding: 30px;
   overflow-x: hidden;
 }
+
 .post-data button{
   width: 100px;
   align-self: center;
@@ -103,11 +127,13 @@
   color: white;
   font-weight: 600;
 }
+
  img{
   object-fit: cover;
   width: 100%;
   height: 300px;
 }
+
 .post-details{
   display: flex;
   justify-content: space-between;
@@ -115,6 +141,7 @@
   color: red;
   font-weight: 700;
 }
+
 ul{
   list-style: none;
   font:bold;
@@ -128,13 +155,24 @@ ul li,a{
   color: darkgray;
   text-decoration: none;
 }
+ul li{
+  padding-top:25px;
+}
 a:hover{
   color: red;
 }
+
 a:active{
   color: red;
 }
+
 a[tabindex]:focus {
   color:red;
   outline: none;
+}
+.bottom-left-info ul{
+  padding-left:20px;
+}
+.top-section{
+  margin-top:50px;
 }

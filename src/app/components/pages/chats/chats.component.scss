@@ -1,0 +1,156 @@
+
+.header{
+  height: 400px;
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+h1{
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  background-color: rgba(255,0,0,0.5);
+  border-radius: 10px;
+}
+
+.header img{
+  height: 300px;
+}
+
+.container{
+  display: flex;
+  height: calc(100vh - 70px);
+  border-top: 2px solid rgb(235, 235, 235);
+
+}
+.chat-list{
+  width: 40%;
+  // height: 100vh;
+}
+.messages{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 60%;
+  // background-color: rgb(241, 243, 245);
+  background-color: #F9F9F9;
+  border-left:2px solid rgb(235, 235, 235);
+}
+.messages ul li{
+  background-color: #F9F9F9;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 25px 0 25px 25px;;
+
+
+}
+.search input{
+  height: 40px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 0 5px 0 gray;
+  outline: none;
+  width: 50%;
+}
+.search button{
+  width: 40px;
+  height: 40px;
+  border-radius:  5px 0 0 5px ;
+  border: none;
+  background-color: #0164F8;
+  box-shadow: 0 0 5px 0 gray;
+
+
+}
+.search button img{
+  width: 18px;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul li{
+  display: flex;
+  align-items: center;
+  background-color: rgb(239, 239, 239);
+  height: 60px;
+  width: 70%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.chat-list li img , .chat-header img{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin: 20px;
+  border: 1px solid black;
+}
+.chat-header{
+  display: flex;
+  align-items: center;
+  background:white;
+}
+.textinput-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.textinput-area input{
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  padding-left: 10px;
+  height: 50px;
+}
+.textinput-area  img{
+  border: none;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+.textinput-area button{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  height: 53px;
+  border: 1px solid gray;
+}
+.user-texts ul li p{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  background-color: lightgray;
+  margin-left: 10px;
+  border-radius:0 10px 10px 0 ;
+}
+.user-texts ul li {
+  display: flex;
+  justify-content: flex-start;
+}
+.friend-texts ul  li, .user-texts ul li {
+  width: 100%;
+}
+.friend-texts ul li{
+  display: flex;
+  justify-content: flex-end;
+}
+.friend-texts ul li p{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  background-color: #E6F1F5;
+  margin-left: 10px;
+  border-radius:0 10px 10px 0 ;
+}

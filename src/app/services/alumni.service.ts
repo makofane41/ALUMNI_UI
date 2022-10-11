@@ -15,7 +15,7 @@ export class AlumniService {
 
   getAlumniBySearchTerm(searchTerm:string){
     return this.getAllAlumni().filter((alumni)=>{
-      return alumni.alumni_fname.toLowerCase().includes(searchTerm.toLowerCase());
+      return alumni.alumni_name.toLowerCase().includes(searchTerm.toLowerCase());
     })
   }
 }

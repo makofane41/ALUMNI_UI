@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class CareerComponent implements OnInit {
 
-  headerTitle:string = "#Careers";
-  headerDescription:string="Read, watch, listen. #TUT_ALUMNI ahare their experiences, perspectives, and commnunity engagements.";
+  headerTitle:string = "#Vaccancies";
+  headerDescription:string="";
   backgroundImg:string="";
 
   constructor() { }

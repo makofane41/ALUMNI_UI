@@ -1,0 +1,89 @@
+
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink=""><img src="/assets/image/Tutlogo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <br><br> <a class="nav-link active" routerLink="" routerLinkActive="active-link"[routerLinkActiveOptions]="{exact:true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <br><br> <a class="nav-link" routerLink="About"routerLinkActive="active-link">About</a>
+        </li>
+        <li class="nav-item">
+          <br><br> <a class="nav-link" routerLink="Contact"routerLinkActive="active-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <br><br> <a class="nav-link" routerLink="events"routerLinkActive="active-link">Event</a>
+        </li>
+        <li class="nav-item">
+          <br><br><a class="nav-link" routerLink="News"routerLinkActive="active-link">News</a>
+        </li>
+        <li class="nav-item">
+          <br><br><a class="nav-link" routerLink="gallery"routerLinkActive="active-link">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <br><br><a class="nav-link" routerLink="Donate"routerLinkActive="active-link">Donate</a>
+        </li>
+        <li class="nav-item">
+          <br><br><a class="nav-link" routerLink="Engage"routerLinkActive="active-link">Engage</a>
+        </li>
+        <li class="nav-item">
+          <br><br><a class="nav-link" routerLink="Career"routerLinkActive="active-link">Career</a>
+        </li>
+      </ul>
+
+
+  </div>
+  <form>
+    <div class="input-group">
+
+          <BR>  <input id="search-input" type="search" id="form1" class="form-control" />
+            <button id="search-button" type="button" class="btn btn-primary">
+              <i class="bi bi-search"></i>
+          </button>
+
+        </div>
+
+        <li class="nav-item dropdown pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+
+            <img [src]="url ? url: 'assets/image/1027249.jpg'" class="Container" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+
+
+
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="view-profile">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+
+
+            <li>
+
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+
+
+
+   </form>
+
+    </div>
+
+  </nav>
