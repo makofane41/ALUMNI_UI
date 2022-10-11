@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { EventsComponent } from './events/events.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { ViewProfileComponent } from './view-profile/view-profile.component';
+import { EventPageComponent } from './event-page/event-page.component';
 
 const routes: Routes = [
-  {path:'view-profile',component:ViewProfileComponent},
-{ path:'events',component:EventsComponent},
-{path:'gallery',component:GalleryComponent}
+  {path:'event-page',component:EventPageComponent}
 ]
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
